@@ -1,0 +1,430 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto;
+}
+
+.container {
+  max-width: 1200px;
+  width: 70%; /*pro mobil pak tuto hodnotu změníš na 100%*/
+  margin: auto; /*to ti zařídí vycentrování bez složitých vedlejších efektů*/
+}
+
+.tent {
+  background-image: url("./images2/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-size: 85px;
+  font-weight: bold;
+  color: white;
+  text-align: right;
+  height: 80vh;
+}
+
+@media screen and (max-width: 576px) {
+  .tent {
+    width: 100%;
+  }
+}
+
+.tent-text {
+  padding-top: 40vh;
+}
+
+.menu {
+  background-color: #33292a;
+}
+
+ul {
+  display: flex;
+  /*flex-direction: row;*/
+  justify-content: space-evenly;
+  /*align-items: center;*/
+  list-style: none;
+  /*text-align: justify;*/
+  background-color: #33292a;
+  color: #fff;
+  /*padding: auto;*/
+  /*list-style-type: none;*/
+}
+
+li {
+  padding: 10px;
+}
+
+.icon {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  ul {
+    display: none;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+  .icon img {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+  }
+
+  /*.img {
+    width: 100%;
+    height: 100%;
+  }*/
+
+  .container {
+    width: 100%; /*pro mobil pak tuto hodnotu změníš na 100%*/
+  }
+
+  .tent-text {
+    font-size: 60px;
+  }
+}
+
+.about-us-content {
+  /*align-content: center;*/
+  margin-top: 20px;
+  width: 70%;
+  display: flex;
+  gap: 40px;
+  /*flex-direction: row;*/
+}
+
+@media screen and (max-width: 576px) {
+  .about-us-content {
+    width: 90%;
+  }
+}
+
+.about-us-text {
+  font-size: 12px;
+  line-height: 1rem; /*měla by se přidat vlastnost line-height*/
+  flex-basis: 50%;
+  /*flex-grow: 7;*/
+  margin-top: 10px;
+}
+
+.image-container {
+  background-image: url("./images2/anneliese-phillips-uv4-vl3liKM-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: fit-content;
+  flex-direction: column;
+  flex-basis: 50%;
+  /*flex-grow: 7;*/
+  /*padding-left: 20px;*/
+  /*margin-left: 20px;*/
+  /*padding-top: 10px;*/
+  margin-top: 10px;
+  background-position: bottom;
+}
+
+.responsive-img-fill {
+  object-fit: cover;
+}
+
+.about-us-heading {
+  font-size: 16px;
+}
+
+.what-we-do-content {
+  /*padding-top: 0px;*/
+  margin-top: 30px;
+  background-color: #33292a;
+  /*width: 100%;*/
+  /* height: 650px;*/
+  /*align-content: center;*/
+  /*display: flex;
+  flex-direction: column;*/
+  margin-bottom: 30px;
+  color: white;
+}
+
+@media screen and (max-width: 576px) {
+  .what-we-do-content {
+    width: 100%;
+  }
+}
+
+.what-we-do-heading {
+  /*padding-top: 50px;*/
+  margin-bottom: 36px;
+  text-align: center;
+  /*align-content: center;*/
+  color: white;
+}
+
+.what-we-do-text {
+  /* width: 70%;*/
+  text-align: center;
+  font-size: 12px;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.icons {
+  /*width: 70%;*/
+  /*padding-top: 100px;*/
+  display: flex;
+  justify-content: space-between;
+  /*align-content: center;
+  margin: auto;*/
+}
+
+.cart-wrapper {
+  width: 100px;
+}
+
+.cart-wrapper img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.cart {
+  text-align: center;
+}
+
+.info-section-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.hiking {
+  /*width: 70px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;*/
+}
+
+.hiking img {
+  width: 100%;
+  height: 100%;
+}
+
+.cycling {
+  /*width: 70px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;*/
+}
+
+.cycling img {
+  width: 100%;
+  height: 100%;
+}
+
+.surfing {
+  /* width: 70px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;*/
+}
+
+.surfing img {
+  width: 100%;
+  height: 100%;
+}
+
+.car-trips {
+  /*width: 70px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;*/
+}
+
+.car-trips img {
+  width: 100%;
+  height: 100%;
+}
+
+.fotky {
+  width: 50%;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  flex-direction: row;
+  align-items: stretch;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 576px) {
+  .fotky {
+    width: 90%;
+  }
+}
+
+.fotka {
+  flex-basis: calc(100% / 3 - 20px / 3);
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  font-weight: bold;
+}
+
+.fotka img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.responsive-image-fill {
+  object-fit: cover;
+}
+
+.where-do-you-want-to-go-container {
+  background-color: rgba(51, 2, 59, 0.635);
+  padding: 60px 20px;
+}
+.where-do-you-want-to-go-content {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+.header {
+  padding: 15px;
+  text-align: center;
+  flex: 1;
+}
+.header h2 {
+  font-size: 40px;
+}
+.second-block {
+  flex: 2;
+  font-size: 20px;
+}
+.text {
+  text-align: justify;
+}
+.top {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.button {
+  background-color: white;
+  width: fit-content;
+  border-radius: 5px;
+  margin: auto;
+}
+.button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+h2 {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .where-do-you-want-to-go-content {
+    flex-direction: row;
+  }
+  .header {
+    text-align: right;
+  }
+  .top {
+    text-align: left;
+  }
+  .button {
+    margin-left: 0;
+  }
+}
+
+.reviews-container {
+  width: 50%;
+  /*align-content: center;*/
+  /*margin: auto;*/
+  text-align: center;
+}
+
+.reviews {
+  margin-bottom: 36px;
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.reviews-heading {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.reviews-carts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+}
+
+.reviews-cart-name {
+  font-weight: bold;
+  margin-top: 24px;
+}
+
+.reviews-cart {
+  text-align: center;
+}
+
+.reviews-cart-img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  /*text-align: center;*/
+  /*margin-left: auto;
+  margin-right: auto;*/
+}
+
+.reviews-cart-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.photos-final {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photos-wrapper {
+  flex-basis: 50%;
+}
+
+.img-final {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  background-color: gray;
+  width: 100%;
+  text-align: center;
+}
