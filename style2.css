@@ -103,6 +103,7 @@ li {
 @media screen and (max-width: 576px) {
   .about-us-content {
     width: 90%;
+    flex-direction: column;
   }
 }
 
@@ -153,6 +154,13 @@ li {
 @media screen and (max-width: 576px) {
   .what-we-do-content {
     width: 100%;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -268,6 +276,11 @@ li {
 @media screen and (max-width: 576px) {
   .fotky {
     width: 90%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .fotka {
+    text-align: center;
   }
 }
 
@@ -276,6 +289,7 @@ li {
   flex-wrap: wrap;
   flex-shrink: 1;
   font-weight: bold;
+  text-align: center;
 }
 
 .fotka img {
@@ -299,6 +313,12 @@ li {
   display: flex;
   gap: 20px;
   flex-direction: row;
+}
+
+@media screen and (max-width: 576px) {
+  .where-do-you-want-to-go-content {
+    flex-direction: column;
+  }
 }
 .header {
   padding: 15px;
@@ -383,6 +403,21 @@ h2 {
   gap: 50px;
 }
 
+@media (min-width: 768px) {
+  .reviews-carts {
+    flex-direction: column;
+    text-align: justify;
+  }
+
+  .reviews-text {
+    text-align: justify;
+  }
+
+  .reviews {
+    text-align: justify;
+  }
+}
+
 .reviews-cart-name {
   font-weight: bold;
   margin-top: 24px;
@@ -412,6 +447,13 @@ h2 {
   margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 576px) {
+  .photos-final {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
 }
 
 .photos-wrapper {
